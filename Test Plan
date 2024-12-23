@@ -1,0 +1,25 @@
+Test Plan
+Project Name:
+Buyer Journey Testing
+
+Objective:
+To validate the complete buyer journey on the Sauce Demo website, ensuring that a user can log in, add items to the cart, proceed to checkout, and confirm the order successfully.
+
+Scope:
+The test covers the following functionalities:
+
+User login with valid credentials.
+Adding items to the shopping cart.
+Navigating to the cart and proceeding to checkout.
+Filling out checkout information.
+Verifying the order confirmation.
+
+Test Environment:
+Website: https://www.saucedemo.com
+Browser: Google Chrome (latest version)
+Automation Tool: Robot Framework with SeleniumLibrary.
+
+Deliverables:
+Test Plan Document
+Test Cases with detailed steps
+Execution results with logs and screenshots (if required)
