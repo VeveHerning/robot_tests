@@ -38,4 +38,6 @@ POST Request
 Create User Data
     [Documentation]    Create a dictionary for the user data to be posted
     ${data}=    Create Dictionary    name=${POST_USER_NAME}    job=${POST_USER_JOB}
+
     [Return]    ${data}
+
