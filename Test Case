@@ -1,0 +1,52 @@
+Test Case 1: Login to Sauce Demo
+Test ID: TC01
+Test Scenario: Verify that the user can log in with valid credentials.
+GIVEN User is on the Sauce Demo login page.
+WHEN User Open the browser and navigate to https://www.saucedemo.com.
+AND Input username: standard_user.
+AND Input password: secret_sauce.
+AND Click the "Login" button.
+THEN User is redirected to the inventory page.
+
+Test Case 2: Add Items to the Shopping Cart
+Test ID: TC02
+Test Scenario: Verify that the user can add items to the shopping cart.
+GIVEN User is logged in and on the inventory page.
+WHEN User Add the "Sauce Labs Backpack" to the cart.
+AND Add the "Sauce Labs Bike Light" to the cart.
+AND Verify that the cart icon shows 2 items.
+THEN Items are added to the cart, and the cart icon updates accordingly.
+
+Test Case 3: Proceed to Checkout
+Test ID: TC03
+Test Scenario: Verify that the user can navigate to the cart and proceed to checkout.
+GIVEN User has items in the cart.
+WHEN User Click on the cart icon.
+AND Click the "Checkout" button.
+THEN The checkout information form is displayed.
+
+Test Case 4: Fill Checkout Information
+Test ID: TC04
+Test Scenario: Verify that the user can fill in checkout information and proceed.
+GIVEN User is on the checkout information page.
+WHEN User Input first name: John.
+AND User Input last name: Doe.
+AND User Input postal code: 12345.
+AND Click the "Continue" button.
+THEN The checkout summary page is displayed.
+
+Test Case 5: Confirm the Order
+Test ID: TC05
+Test Scenario: Verify that the user can complete the order.
+GIVEN User is on the checkout summary page.
+WHEN Click the "Finish" button.
+AND Verify that the order confirmation page is displayed.
+THEN The order confirmation page is displayed with a success message.
+
+Test Case 6: Close the Browser
+Test ID: TC06
+Test Scenario: Verify that the browser closes successfully after the test.
+GIVEN User has completed the order or is at any step.
+WHEN Close the browser.
+AND Verify that the browser instance is terminated.
+THEN The browser is closed.
